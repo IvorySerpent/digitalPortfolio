@@ -1,0 +1,169 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif; 
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background-color: #2C3E50; 
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5em;
+  letter-spacing: 2px;
+}
+
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #1abc9c; 
+}
+
+/* Main  */
+main {
+  padding: 30px 10%;
+  text-align: center;
+}
+
+/* About Me  */
+#about-me {
+  margin-bottom: 40px;
+}
+
+#about-me img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 20px;
+  border: 5px solid #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#about-me p {
+  font-size: 1.2em;
+  margin-top: 20px;
+  color: #555;
+}
+
+/* Class Cards */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.class-card {
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  width: calc(33.33% - 30px);
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.class-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.class-card h3 {
+  font-size: 1.5em;
+  margin: 15px 0;
+}
+
+.class-card p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.class-card .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db; 
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.class-card .btn:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px); 
+}
+
+/* Footer */
+footer {
+  background-color: #2C3E50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .card-container {
+    gap: 20px;
+  }
+
+  .class-card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-container {
+    gap: 15px;
+  }
+
+  .class-card {
+    width: 100%;
+  }
+
+  header h1 {
+    font-size: 2em;
+  }
+}
+
+.extracurriculars {
+  text-align: center
+}
